@@ -85,24 +85,6 @@ guesses for asset-management terminology; add real mistakes as you spot them,
 including your own firm- or product-specific terms. Keep "wrong" variants
 distinctive — very short or common words will misfire on normal text.
 
-
-## Building (happens on GitHub, not on your machine)
-
-`.github/workflows/build.yml` runs on GitHub's Windows runners:
-
-1. Clones whisper.cpp at pinned tag `v1.8.6` (build-time only — not vendored in
-   this repo) and compiles `whisper-cli.exe`: static-linked, CPU-only,
-   AVX2/FMA (Haswell-compatible, **not** tuned to the runner's newer CPU).
-2. Builds `app.exe` with PyInstaller (Python 3.12, onedir).
-3. Zips everything into `MeetingScribe-win64.zip`.
-
-- Every push to `main` → build + downloadable **Actions artifact** (sanity check).
-- Pushing a tag like `v1.0.0` → a **GitHub Release** with the zip attached.
-- The model file is deliberately excluded from git, the build, and the Release.
-
-To cut a new release: `git tag v1.x.y && git push origin v1.x.y` (or use the
-GitHub web UI → Releases → Draft new release → new tag).
-
 ## Code signing / SmartScreen
 
 The exe is unsigned. Options, in increasing cost:
