@@ -10,7 +10,7 @@ transcripts, ready to paste elsewhere.
 - Summarization is explicitly **out of scope** — this app ends at the corrected transcript.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/419f68e5-abfb-4f1a-b00f-dceb69da3402" alt="Meeting Recorder + Transcriber — main window" width="640">
+  <img src="[https://github.com/user-attachments/assets/419f68e5-abfb-4f1a-b00f-dceb69da3402](https://github.com/user-attachments/assets/768f04e7-bd7f-499c-b61a-f06eda0c1fff)" alt="Meeting Recorder + Transcriber — main window" width="640">
 </p>
 
 ## Privacy & consent
